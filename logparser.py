@@ -6,9 +6,9 @@ def insertionsort(vetor):
     for i in range(1, len(vetor)):
         j = i
         while j > 0 and vetor[j-1][1] < vetor[j][1]:
-            aux = vetor[j][1]
-            vetor[j][1] = vetor[j - 1][1]
-            vetor[j - 1][1] = aux
+            aux = vetor[j]
+            vetor[j] = vetor[j - 1]
+            vetor[j - 1] = aux
             j -= 1
     return vetor
 
